@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5f0">
+  <title>tabo — Local food, made simple</title>
+  <meta name="description" content="Discover local food shops. Order for pickup or shop delivery.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button id="search-toggle" class="icon-button" aria-label="Toggle search" type="button">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+      </button>
+      <a class="wordmark" href="#home" aria-label="Tabo home">tabo</a>
+      <button id="orders-toggle" class="icon-button" aria-label="My orders" type="button">
+        <svg viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2Z"></path><path d="M9 7h6M9 11h6M9 15h4"></path></svg>
+      </button>
+    </div>
+    <div class="search-panel" id="search-panel" hidden>
+      <label for="search-field" class="visually-hidden">Search shops and dishes</label>
+      <input id="search-field" type="search" placeholder="Search shops and dishes..." autocomplete="off">
+    </div>
+  </header>
+  <div class="subnav">
+    <nav id="navigation" aria-label="Workspaces"></nav>
+    <div id="account-actions"></div>
+  </div>
+  <main id="app" aria-live="polite"><p class="muted">Loading Tabo…</p></main>
+  <div id="cart-bar" class="cart-bar" hidden></div>
+  <div id="message" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
