@@ -78,7 +78,6 @@ function shopCard(shop){
 }
 function renderHome(){
  const q=state.search.toLowerCase();
- const chips=['All','Meals','Snacks','Drinks']; // simple discovery categories until seller-defined categories are added
  const shops=state.shops.filter(s=>(s.name+' '+(s.description||'')).toLowerCase().includes(q)
    || state.items.some(i=>i.shop_id===s.id && i.name.toLowerCase().includes(q)));
  const items=state.items.filter(i=>!q || (i.name+' '+(findShop(i.shop_id)?.name||'')).toLowerCase().includes(q));
@@ -122,7 +121,7 @@ function renderCart(){
   root.innerHTML='<h1>Your cart</h1>'+noteEmpty('Nothing in your cart','Browse local food items to get started.','<button class="btn primary" data-action="navigate" data-view="home">Browse food</button>');
   return;
  }
- if(state.method==='delivery'&&!shop.offers_delivery)state.method='pickup';
+ if((state.method==='delivery'&&!shop.offers_delivery)||(state.method==='pickup'&&!shop.offers_pickup))state.method=shop.offers_pickup?'pickup':'delivery';
  root.innerHTML='<h1>Your cart</h1><div class="two"><section class="panel"><div class="panel-head"><h2>'+esc(shop.name)+'</h2>'+
  '<button class="btn sm" data-action="navigate" data-view="home">Add more</button></div>'+
  lines.map(({item,qty})=>'<div class="list-row"><div><strong>'+esc(item.name)+'</strong><span class="small muted">'+money(item.price_cents)+' each</span></div>'+
@@ -316,13 +315,16 @@ async function submitOrder(form){
  if(method==='delivery'&&address.length<8){flash('Enter a complete delivery address.');return}
  if(phone.length<7){flash('Enter a valid contact phone number.');return}
  const requestId=state.requestId||(state.requestId=crypto.randomUUID());
- state.busy=true;render(); // do not re-read form after re-render
+ if(state.busy)return;
+ state.busy=true;
+ const submit=form.querySelector('[type="submit"]');
+ if(submit)submit.disabled=true;
  const {data,error}=await sb.rpc('place_order',{
   p_shop_id:shop.id,p_method:method,p_items:cartLines().map(x=>({id:x.item.id,quantity:x.qty})),
   p_phone:phone,p_delivery_address:method==='delivery'?address:null,p_note:note,p_request_id:requestId
  });
  state.busy=false;
- if(error){flash(error.message);render();return}
+ if(error){flash(error.message);if(submit)submit.disabled=false;return}
  state.cart=[];saveCart();state.requestId=null;
  flash('Order '+String(data).slice(0,8)+' placed successfully.');
  await navigate('orders');
