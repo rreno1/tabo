@@ -1,0 +1,286 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>tabo</title><style>:root{--b:#941c23;--bg:#f7f4ef;--c:#fffdfa;--t:#191919;--m:#746f69;--l:#e6dfd6;--s:16px;--card-gap:12px;--card-h:282px;--card-media-h:150px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{cursor:pointer}img{width:100%;height:100%;object-fit:cover}.ico{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.top{position:sticky;top:0;z-index:20;background:#f7f4eff2;backdrop-filter:blur(14px);border-bottom:1px solid var(--l)}.bar{max-width:1100px;margin:auto;height:66px;padding:0 16px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}.logo{font-size:24px;font-weight:950;letter-spacing:-1px;color:var(--b);text-transform:lowercase}.left{justify-self:start}.right{justify-self:end}.iconbtn{width:42px;height:42px;border:1px solid var(--l);border-radius:13px;background:var(--c);display:grid;place-items:center}.searchpanel{max-height:0;overflow:hidden;opacity:0;transition:.2s}.searchpanel.open{max-height:70px;opacity:1;padding:0 16px 12px}.searchbox{max-width:620px;margin:auto;position:relative}.searchbox .ico{position:absolute;left:13px;top:13px;color:var(--m)}.searchbox input{width:100%;height:46px;border:1px solid var(--l);border-radius:13px;background:white;padding:0 14px 0 42px;outline:0}main{max-width:1100px;margin:auto;padding:22px 16px 100px}.view{display:none}.view.on{display:block}.hero{display:grid;grid-template-columns:1.05fr .95fr;border:1px solid #e8d0b7;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,#f5dcb9,#edb272)}.copy{padding:32px}.copy small{font-weight:900;color:var(--b);letter-spacing:.08em}.copy h1{font-size:clamp(38px,7vw,72px);line-height:.92;letter-spacing:-.05em;margin:10px 0 12px}.copy p{max-width:530px;color:#66503e;line-height:1.5}.heroimg{min-height:270px}.chips,.shops{display:flex;gap:var(--card-gap);overflow:auto;scrollbar-width:none}.chips{margin-top:18px}.chips::-webkit-scrollbar,.shops::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;border:1px solid var(--l);background:var(--c);border-radius:999px;padding:9px 13px;font-weight:800}.chip.on{background:var(--b);border-color:var(--b);color:white}.sec{margin-top:30px}.head{margin-bottom:14px}.head h2{margin:0 0 4px;font-size:21px}.head p{margin:0;color:var(--m);font-size:13px}.shop,.item{background:var(--c);border:1px solid var(--l);border-radius:16px;overflow:hidden;cursor:pointer;min-width:0}.shop{flex:0 0 300px;height:312px;display:flex;flex-direction:column}.shopimg{height:168px;flex:0 0 168px;background:#eee}.pad{padding:12px;display:flex;flex:1;flex-direction:column}.title{font-weight:900;font-size:17px;line-height:1.25;min-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.meta{color:var(--m);font-size:13px;margin-top:6px;line-height:1.35}.shop .meta{min-height:36px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:10px;min-height:38px;align-content:flex-end}.pill{padding:5px 8px;border-radius:999px;background:#f0ebe5;font-size:12px;font-weight:800}.green{background:#e7f4eb;color:#247a48}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{height:248px;display:flex;flex-direction:column}.itemimg{height:150px;flex:0 0 150px;background:#eee}.itembody{padding:12px;display:flex;flex:1;flex-direction:column}.item h3{margin:3px 0 6px;font-size:15px;line-height:1.25;min-height:38px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.shopname{font-size:12px;color:var(--m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .price{margin-top:auto}.price{font-weight:900}.viewlink{color:var(--b);font-size:12px;font-weight:900}.product{max-width:760px;margin:auto;background:var(--c);border:1px solid var(--l);border-radius:22px;overflow:hidden}.productimg{height:360px;position:relative;background:#eee}.productbody{padding:20px}.productbody h1{margin:6px 0 8px;font-size:30px}.productshop{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--l)}.productdesc{color:var(--m);line-height:1.55;margin:14px 0}.productbuy{display:flex;gap:12px;align-items:center;margin-top:18px}.productbuy .price{font-size:24px;flex:1}.productbuy .full{width:auto;margin:0;padding:13px 18px}.rest{border:1px solid var(--l);border-radius:22px;background:var(--c);overflow:hidden}.cover{height:285px;position:relative}.back{position:absolute;top:14px;left:14px}.restinfo{padding:20px}.restinfo h1{margin:0 0 8px}.menuwrap{display:grid;grid-template-columns:1fr 340px;gap:16px;margin-top:18px}.menulist{display:grid;gap:10px}.menu{display:grid;grid-template-columns:100px 1fr auto;gap:12px;align-items:center;padding:10px;background:var(--c);border:1px solid var(--l);border-radius:16px;cursor:pointer;transition:border-color .15s ease,transform .15s ease,background .15s ease}.menu:hover{border-color:#d7cbc0;background:#fff}.menu:active{transform:scale(.995)}.menu img{height:84px;border-radius:12px}.menu h3{margin:0 0 4px}.menu p{margin:0;color:var(--m);font-size:13px}.add{border:1px solid #efc6c9;background:#f9e7e8;color:var(--b);border-radius:10px;padding:9px 11px;font-weight:900}.cart{position:sticky;top:82px;height:max-content;background:var(--c);border:1px solid var(--l);border-radius:16px;padding:15px}.cartline{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--l)}.qty{display:flex;gap:7px;align-items:center}.qty button{width:28px;height:28px;border:1px solid var(--l);background:white;border-radius:8px}.sum{display:flex;justify-content:space-between;padding-top:12px;font-weight:900}.full{width:100%;margin-top:14px;border:0;background:var(--b);color:white;border-radius:12px;padding:13px;font-weight:900}.checkout{max-width:680px;margin:auto;background:var(--c);border:1px solid var(--l);border-radius:20px;padding:20px}.opt{border:1px solid var(--l);border-radius:13px;padding:13px;margin:8px 0;cursor:pointer}.opt.on{border:2px solid var(--b);background:#fff7f7}.field{width:100%;border:1px solid var(--l);border-radius:11px;padding:12px;margin-top:8px}.confirm{text-align:center;padding:40px 20px}.tick{width:70px;height:70px;margin:auto;border-radius:50%;display:grid;place-items:center;background:#e7f4eb;color:#247a48}.float{display:none;position:fixed;left:12px;right:12px;bottom:12px;background:var(--b);color:white;border:0;border-radius:14px;padding:14px 16px;font-weight:900;justify-content:space-between;z-index:30}@media(max-width:850px){.items{grid-template-columns:repeat(3,minmax(0,1fr))}.shop{flex-basis:calc((100% - (var(--card-gap)*2))/3)}.menuwrap{grid-template-columns:1fr}.cart{display:none}.float.show{display:flex}}@media(max-width:620px){main{padding:14px 12px 90px}.bar{padding:0 12px}.hero{grid-template-columns:1fr}.copy{padding:22px}.copy h1{font-size:44px}.heroimg{height:175px;min-height:0}.shop{flex-basis:78vw;max-width:310px;height:294px}.shopimg{height:156px;flex-basis:156px}.items{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{height:222px}.itemimg{height:128px;flex-basis:128px}.itembody{padding:10px}.item h3{font-size:14px;min-height:35px}.productimg{height:290px}.productbody{padding:16px}.productbody h1{font-size:25px}.cover{height:215px}.menu{grid-template-columns:82px 1fr auto}.menu img{height:72px}.menu p{display:none}}
+/* Unified discovery cards */
+:root{--card-gap:12px;--card-h:272px;--card-media-h:146px}
+.shops{gap:var(--card-gap)}
+.shop,.item{height:var(--card-h);background:var(--c);border:1px solid var(--l);border-radius:16px;overflow:hidden;cursor:pointer;min-width:0;display:flex;flex-direction:column}
+.shop{flex:0 0 29%;max-width:320px}
+.shopimg,.itemimg{height:var(--card-media-h);flex:0 0 var(--card-media-h);background:#eee}
+.pad,.itembody{padding:12px;flex:1;display:flex;flex-direction:column;min-height:0}
+.title,.item h3{font-size:15px;line-height:1.25}
+.title{font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item h3{margin:3px 0 7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.shop .meta{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.shop .pills{margin-top:auto;padding-top:8px;max-height:50px;overflow:hidden}
+.item .price{margin-top:auto}
+.items{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--card-gap)}
+@media(max-width:850px){.shop{flex-basis:38%;max-width:280px}.items{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){.shop{flex-basis:58vw;max-width:240px;height:var(--card-h)}.shopimg,.itemimg{height:var(--card-media-h);flex-basis:var(--card-media-h)}.item{height:var(--card-h)}.items{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--card-gap)}.pad,.itembody{padding:12px}.title,.item h3{font-size:14px}.shopname{font-size:11px}}
+
+/* Polished shop discovery and item cards */
+:root { --card-gap: 12px; --card-h: 274px; --card-media-h: 154px; }
+.shops {
+  gap: var(--card-gap);
+  padding: 2px 1px 8px;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.shop, .item {
+  height: var(--card-h);
+  border-radius: 15px;
+  border: 1px solid var(--l);
+  background: var(--c);
+  box-shadow: 0 1px 2px rgba(40, 25, 15, .03);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.shop { flex: 0 0 clamp(250px, 28%, 310px); scroll-snap-align: start; }
+.shop:hover, .item:hover, .menu:hover {
+  border-color: #ccbbb0;
+  box-shadow: 0 6px 16px rgba(40, 25, 15, .08);
+}
+.shop:active, .item:active { transform: scale(.99); }
+.shop:focus-visible, .item:focus-visible, .menu:focus-visible {
+  outline: 3px solid rgba(148, 28, 35, .35);
+  outline-offset: 2px;
+}
+.shopimg, .itemimg {
+  position: relative;
+  flex: 0 0 var(--card-media-h);
+  height: var(--card-media-h);
+  background: #eee9e2;
+  overflow: hidden;
+}
+.shopimg img, .itemimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.openflag {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #fffdf9;
+  color: #276c45;
+  border: 1px solid rgba(255,255,255,.9);
+  box-shadow: 0 2px 7px #00000018;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 11px;
+}
+.open-dot {width: 6px; height: 6px; background: #2e9359; border-radius: 50%;}
+.pad, .itembody {
+  padding: 12px;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.shop .title {
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.25;
+  min-height: 20px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shopline {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #5e5750;
+  white-space: nowrap;
+}
+.shopline .star { color: #c68b22; display: inline-flex; }
+.shopline .star svg { width: 14px; height: 14px; }
+.shoptype {
+  font-size: 12px;
+  color: var(--m);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+.shopservices {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 7px;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 8px;
+  overflow: hidden;
+}
+.shopservices .pill {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  padding: 5px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  flex: 0 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+}
+.shopservices .pill .ico { width: 13px; height: 13px; flex: 0 0 13px; }
+.items { gap: var(--card-gap); }
+.item h3 {
+  font-size: 15px;
+  min-height: 37px;
+  line-height: 1.25;
+  margin: 5px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.item .shopname {
+  color: #81776d;
+  font-size: 12px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: auto;
+}
+.item-price-row .price {font-size: 16px; line-height: 1.2; margin: 0;}
+.open-item-arrow {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #f0e4df;
+  background: #fbf0ec;
+  color: var(--b);
+  display: grid;
+  place-items: center;
+  flex: 0 0 26px;
+}
+.open-item-arrow .ico { width: 14px; height: 14px; }
+.menu {min-width: 0;}
+.menu > div:nth-child(2) {min-width: 0;}
+.menu h3 {font-size: 15px; line-height: 1.3;}
+.menu .add {display:inline-flex; align-items:center; justify-content:center; gap:4px; white-space:nowrap;}
+.menu .add .ico {width:15px;height:15px;}
+.empty-discovery {
+  padding: 20px;
+  border: 1px dashed #d9cbc1;
+  border-radius: 14px;
+  color: var(--m);
+  background: #fffdf9;
+}
+.empty-discovery button {
+  border: 1px solid var(--l);
+  background: white;
+  border-radius: 9px;
+  padding: 9px 12px;
+  margin-top: 12px;
+  font-weight: 750;
+  color: var(--b);
+}
+@media(max-width:850px) {
+  .shop { flex-basis: clamp(215px, 36%, 282px); }
+}
+@media(max-width:620px) {
+  :root { --card-h: 246px; --card-media-h: 126px; }
+  .shop { flex: 0 0 56vw; max-width: 240px; height: var(--card-h); }
+  .item { height: var(--card-h); }
+  .shopimg, .itemimg { height: var(--card-media-h); flex-basis: var(--card-media-h); }
+  .pad, .itembody { padding: 10px; }
+  .shop .title {font-size: 14px;}
+  .shopline, .shoptype {font-size:11px;}
+  .shopservices {gap: 4px;}
+  .shopservices .pill {font-size: 10px; padding: 4px 6px; gap: 3px;}
+  .shopservices .pill .ico {width: 12px; height: 12px; flex-basis: 12px;}
+  .item h3 {font-size: 13px; min-height: 33px;}
+  .item .shopname {font-size: 11px;}
+  .item-price-row .price {font-size: 15px;}
+  .menu {grid-template-columns: 74px minmax(0,1fr) auto; gap: 9px;}
+  .menu img {width: 74px; height: 72px;}
+  .menu .add {padding: 9px 8px; font-size: 12px;}
+  .menu h3 {font-size: 14px;}
+}
+@media(prefers-reduced-motion: reduce){
+ .shop,.item,.menu {transition:none}
+ .shops{scroll-behavior:auto}
+}
+</style></head><body><svg width="0" height="0" style="position:absolute"><symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol><symbol id="receipt" viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2Z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol><symbol id="left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol><symbol id="right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol><symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol><symbol id="store" viewBox="0 0 24 24"><path d="M4 10v10h16V10M3 10l2-6h14l2 6M8 20v-6h8v6"/><path d="M3 10c0 2 3 3 5 0 2 3 6 3 8 0 2 3 5 2 5 0"/></symbol><symbol id="truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol></svg><header class="top"><div class="bar"><div class="left"><button class="iconbtn" onclick="toggleSearch(this)" aria-label="Search"><svg class="ico"><use href="#search"/></svg></button></div><div class="logo">tabo</div><div class="right"><button class="iconbtn" onclick="latest()" aria-label="Orders"><svg class="ico"><use href="#receipt"/></svg></button></div></div><div class="searchpanel" id="sp"><div class="searchbox"><svg class="ico"><use href="#search"/></svg><input id="q" placeholder="Search shops or items..." oninput="renderHome()"></div></div></header><main><section id="home" class="view on"><div class="hero"><div class="copy"><small>LOCAL FOOD, SIMPLE ORDERING</small><h1>Good food.<br>Less friction.</h1><p>Browse local shops, discover items, add what you want, then choose pickup or shop delivery. The shop handles fulfillment.</p></div><div class="heroimg"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80"></div></div><div class="chips" id="chips"><button class="chip on" onclick="cat('all',this)">All</button><button class="chip" onclick="cat('pizza',this)">Pizza</button><button class="chip" onclick="cat('burger',this)">Burgers</button><button class="chip" onclick="cat('filipino',this)">Filipino</button><button class="chip" onclick="cat('chicken',this)">Chicken</button><button class="chip" onclick="cat('drinks',this)">Drinks</button></div><div class="sec"><div class="head"><h2>Popular shops</h2><p>Swipe sideways to browse local sellers.</p></div><div class="shops" id="shops"></div></div><div class="sec"><div class="head"><h2>Items from shops</h2><p>Browse dishes and open an item to view details and order.</p></div><div class="items" id="items"></div></div></section><section id="restaurant" class="view"><div class="rest"><div class="cover"><img id="cover"><button class="iconbtn back" onclick="show('home')"><svg class="ico"><use href="#left"/></svg></button></div><div class="restinfo"><h1 id="rname"></h1><div class="meta" id="rmeta"></div><div class="pills" id="services"></div></div></div><div class="menuwrap"><div><div class="head"><h2>Menu</h2><p>Choose an item and add it to your cart.</p></div><div class="menulist" id="menu"></div></div><aside class="cart"><h3>Your cart</h3><div id="cart"></div><button class="full" id="review" onclick="checkout()">Review order</button></aside></div></section><section id="itemdetail" class="view"><div class="product"><div class="productimg"><img id="pimg"><button class="iconbtn back" onclick="backFromItem()"><svg class="ico"><use href="#left"/></svg></button></div><div class="productbody"><div class="shopname" id="pshop"></div><h1 id="pname"></h1><div class="productshop"><div><b id="pseller"></b><div class="meta" id="psellermeta"></div></div><button class="iconbtn" onclick="show('restaurant')" aria-label="View shop"><svg class="ico"><use href="#store"/></svg></button></div><p class="productdesc" id="pdesc"></p><div class="pills" id="pservices"></div><div class="productbuy"><div class="price" id="pprice"></div><button class="full" id="padd" onclick="addCurrentItem()">Add to cart</button></div></div></div></section><section id="checkout" class="view"><div class="checkout"><button class="iconbtn" onclick="show('restaurant')"><svg class="ico"><use href="#left"/></svg></button><h1>Place your order</h1><p class="meta">Choose pickup or shop delivery when the seller offers it.</p><h3>Order type</h3><div id="opts"></div><div id="delivery"><h3>Delivery details</h3><input class="field" id="addr" value="Delivery address"><input class="field" id="phone" value="0912 345 6789"></div><h3>Payment</h3><div class="opt on"><b id="pay">Cash on delivery</b><div class="meta">Pay the shop directly.</div></div><div id="summary"></div><button class="full" onclick="place()">Place order</button></div></section><section id="done" class="view"><div class="checkout confirm"><div class="tick"><svg class="ico"><use href="#check"/></svg></div><h1>Order placed</h1><p class="meta">The order was sent to the shop. The seller is responsible for preparation and delivery when offered.</p><button class="full" onclick="reset()">Back to home</button></div></section></main><button id="float" class="float" onclick="checkout()"><span id="cnt">0 items</span><span id="tot">₱0</span></button><script>const I=(id)=>`<svg class="ico"><use href="#${id}"/></svg>`;const D={tony:{id:'tony',name:"Tony's Pizza",cat:['pizza','drinks'],rating:'4.8',eta:'20–30 min',type:'Pizza · Italian',fee:49,svc:['pickup','delivery'],img:'https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=80',menu:[['Margherita Pizza',420,'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=500&q=80'],['Pepperoni Pizza',450,'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=80'],['Garlic Knots',180,'https://images.unsplash.com/photo-1573140401552-3fab0b24427f?auto=format&fit=crop&w=500&q=80']]},burger:{id:'burger',name:'Burger Bros',cat:['burger','chicken'],rating:'4.7',eta:'15–25 min',type:'Burgers · Fries',fee:0,svc:['pickup'],img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80',menu:[['Classic Cheeseburger',220,'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80'],['Double Burger',320,'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80'],['Loaded Fries',140,'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80']]},nanay:{id:'nanay',name:"Nanay's Kitchen",cat:['filipino','chicken'],rating:'4.9',eta:'25–35 min',type:'Filipino · Home-cooked',fee:35,svc:['pickup','delivery'],img:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80',menu:[['Chicken Adobo',180,'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80'],['Pancit',150,'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80'],['Lumpia',120,'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=500&q=80']]}};let C='all',S=null,cart=[],type='pickup',last=false,currentItem=null,itemOrigin='home';const peso=n=>'₱'+n.toLocaleString('en-PH');function toggleSearch(b){sp.classList.toggle('open');if(sp.classList.contains('open'))setTimeout(()=>q.focus(),100)}function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));document.getElementById(id).classList.add('on');floating();scrollTo(0,0)}function cat(c,b){C=c;document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');renderHome()}function renderHome(){let x=q.value.toLowerCase();let ss=Object.values(D).filter(s=>(C==='all'||s.cat.includes(C))&&(!x||[s.name,s.type,...s.menu.flat()].join(' ').toLowerCase().includes(x)));shops.innerHTML=ss.map(s=>`<div class="shop" onclick="openShop('${s.id}')"><div class="shopimg"><img src="${s.img}"></div><div class="pad"><div class="title">${s.name}</div><div class="meta">${s.rating} · ${s.eta} · ${s.type}</div><div class="pills"><span class="pill green">Open</span>${s.svc.includes('pickup')?`<span class="pill">${I('store')} Pickup</span>`:''}${s.svc.includes('delivery')?`<span class="pill">${I('truck')} Shop delivery</span>`:''}</div></div></div>`).join('');let arr=[];ss.forEach(s=>s.menu.forEach((m,i)=>{let txt=(s.name+' '+m[0]).toLowerCase();if(!x||txt.includes(x))arr.push([s,m,i])}));items.innerHTML=arr.map(([s,m,i])=>`<div class="item" onclick="openItem('${s.id}',${i},'home')"><div class="itemimg"><img src="${m[2]}" alt="${m[0]}"></div><div class="itembody"><div class="shopname">${s.name}</div><h3>${m[0]}</h3><div class="price">${peso(m[1])}</div></div></div>`).join('')}function openShop(id){S=D[id];cart=[];type=S.svc.includes('delivery')?'delivery':'pickup';cover.src=S.img;rname.textContent=S.name;rmeta.textContent=S.rating+' · '+S.eta+' · '+S.type;services.innerHTML=(S.svc.includes('pickup')?`<span class="pill">${I('store')} Pickup</span>`:'')+(S.svc.includes('delivery')?`<span class="pill">${I('truck')} Shop delivery · ${peso(S.fee)}</span>`:'');menu.innerHTML=S.menu.map((m,i)=>`<div class="menu" onclick="openItem(\'${S.id}\',${i},\'restaurant\')"><img src="${m[2]}"><div><h3>${m[0]}</h3><p>Freshly prepared by ${S.name}.</p><div class="price">${peso(m[1])}</div></div><button class="add" onclick="event.stopPropagation();add(${i})">${I('plus')} Add</button></div>`).join('');renderCart();show('restaurant')}function openItem(id,i,origin='home'){itemOrigin=origin;let next=D[id];if(!S||S.id!==id){S=next;cart=[];type=S.svc.includes('delivery')?'delivery':'pickup'}currentItem=i;let m=S.menu[i];pimg.src=m[2];pimg.alt=m[0];pshop.textContent=S.name;pname.textContent=m[0];pseller.textContent=S.name;psellermeta.textContent=S.rating+' · '+S.eta+' · '+S.type;pdesc.textContent='Freshly prepared by '+S.name+'. Review the price and fulfillment options, then add it to your cart.';pprice.textContent=peso(m[1]);pservices.innerHTML=(S.svc.includes('pickup')?`<span class="pill">${I('store')} Pickup</span>`:'')+(S.svc.includes('delivery')?`<span class="pill">${I('truck')} Shop delivery · ${peso(S.fee)}</span>`:'');cover.src=S.img;rname.textContent=S.name;rmeta.textContent=S.rating+' · '+S.eta+' · '+S.type;services.innerHTML=pservices.innerHTML;menu.innerHTML=S.menu.map((x,j)=>`<div class="menu" onclick="openItem(\'${S.id}\',${j},\'restaurant\')"><img src="${x[2]}"><div><h3>${x[0]}</h3><p>Freshly prepared by ${S.name}.</p><div class="price">${peso(x[1])}</div></div><button class="add" onclick="event.stopPropagation();add(${j})">${I('plus')} Add</button></div>`).join('');renderCart();show('itemdetail')}function backFromItem(){show(itemOrigin==='restaurant'?'restaurant':'home')}function addCurrentItem(){if(currentItem===null)return;add(currentItem)}function add(i){let m=S.menu[i],e=cart.find(x=>x.n===m[0]);e?e.q++:cart.push({n:m[0],p:m[1],q:1});renderCart()}function qty(i,d){cart[i].q+=d;if(cart[i].q<1)cart.splice(i,1);renderCart()}function sub(){return cart.reduce((a,x)=>a+x.p*x.q,0)}function total(){return sub()+(type==='delivery'?S.fee:0)}function renderCart(){let c=document.getElementById('cart');c.innerHTML=cart.length?cart.map((x,i)=>`<div class="cartline"><div><b>${x.n}</b><div class="meta">${peso(x.p)} each</div></div><div class="qty"><button onclick="qty(${i},-1)">${I('minus')}</button><b>${x.q}</b><button onclick="qty(${i},1)">${I('plus')}</button></div></div>`).join('')+`<div class="sum"><span>Total</span><span>${peso(total())}</span></div>`:'<div class="meta">Your cart is empty.</div>';review.disabled=!cart.length;floating()}function floating(){let n=cart.reduce((a,x)=>a+x.q,0);cnt.textContent=n+' '+(n===1?'item':'items');tot.textContent=S?peso(total()):'₱0';float.classList.toggle('show',(restaurant.classList.contains('on')||itemdetail.classList.contains('on'))&&cart.length&&innerWidth<=850)}function checkout(){if(!cart.length)return;opts.innerHTML=S.svc.map(v=>`<div class="opt ${v===type?'on':''}" onclick="setType('${v}')"><b>${v==='delivery'?I('truck')+' Shop delivery':I('store')+' Pickup'}</b><div class="meta">${v==='delivery'?S.eta+' · '+peso(S.fee):'Collect directly from the shop'}</div></div>`).join('');delivery.style.display=type==='delivery'?'block':'none';pay.textContent=type==='delivery'?'Cash on delivery':'Pay on pickup';summary.innerHTML=`<div class="cartline"><span>Items</span><b>${peso(sub())}</b></div>${type==='delivery'?`<div class="cartline"><span>Delivery</span><b>${peso(S.fee)}</b></div>`:''}<div class="sum"><span>Total</span><span>${peso(total())}</span></div>`;show('checkout')}function setType(v){if(!S.svc.includes(v))return;type=v;checkout()}function place(){if(type==='delivery'&&(!addr.value.trim()||!phone.value.trim()))return alert('Enter delivery details.');last=true;show('done')}function latest(){last?show('done'):show('home')}function reset(){cart=[];S=null;last=false;currentItem=null;renderHome();show('home')}addEventListener('resize',floating);renderHome();</script><script>
+// Refined discovery cards: card-wide tap targets, consistent content, search empty states.
+const taboStar = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="m12 2 3.09 6.26 6.91 1.01-5 4.88 1.18 6.89L12 17.79l-6.18 3.25L7 14.15 2 9.27l6.91-1.01z"/></svg>';
+function activateCard(event, cb) {
+  if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); cb(); }
+}
+function clearDiscovery() {
+  q.value = '';
+  C = 'all';
+  document.querySelectorAll('#chips .chip').forEach((el, i) => el.classList.toggle('on', i === 0));
+  renderHome();
+}
+window.renderHome = function () {
+  const term = q.value.trim().toLowerCase();
+  const matches = Object.values(D).filter(s =>
+    (C === 'all' || s.cat.includes(C)) &&
+    (!term || [s.name, s.type, ...s.menu.flat()].join(' ').toLowerCase().includes(term))
+  );
+  shops.innerHTML = matches.map(s => `
+    <article class="shop" role="button" tabindex="0" aria-label="Open ${s.name}"
+      onclick="openShop('${s.id}')" onkeydown="activateCard(event,()=>openShop('${s.id}'))">
+      <div class="shopimg">
+        <img src="${s.img}" alt="${s.name}" loading="lazy">
+        <span class="openflag"><span class="open-dot"></span>Open</span>
+      </div>
+      <div class="pad">
+        <div class="title">${s.name}</div>
+        <div class="shopline"><span class="star">${taboStar}</span><strong>${s.rating}</strong>
+          <span>·</span><span>${s.eta}</span></div>
+        <div class="shoptype">${s.type}</div>
+        <div class="shopservices">
+          ${s.svc.includes('pickup')?`<span class="pill">${I('store')}Pickup</span>`:''}
+          ${s.svc.includes('delivery')?`<span class="pill">${I('truck')}Shop delivery</span>`:''}
+        </div>
+      </div>
+    </article>`).join('') || `<div class="empty-discovery">No shops found.<div><button onclick="clearDiscovery()">Clear filters</button></div></div>`;
+
+  const matchesItems = [];
+  matches.forEach(s => s.menu.forEach((m, i) => {
+    if (!term || (s.name + ' ' + m[0]).toLowerCase().includes(term)) {
+      matchesItems.push({s, m, i});
+    }
+  }));
+  items.innerHTML = matchesItems.map(({s, m, i}) => `
+    <article class="item" role="button" tabindex="0" aria-label="View ${m[0]} from ${s.name}"
+      onclick="openItem('${s.id}',${i},'home')"
+      onkeydown="activateCard(event,()=>openItem('${s.id}',${i},'home'))">
+      <div class="itemimg">
+        <img src="${m[2]}" alt="${m[0]}" loading="lazy"
+          onerror="this.onerror=null;this.src='${s.img}'">
+      </div>
+      <div class="itembody">
+        <div class="shopname">${s.name}</div>
+        <h3>${m[0]}</h3>
+        <div class="item-price-row">
+          <span class="price">${peso(m[1])}</span>
+          <span class="open-item-arrow" aria-hidden="true">${I('right')}</span>
+        </div>
+      </div>
+    </article>`).join('') || `<div class="empty-discovery">No items match your search.<div><button onclick="clearDiscovery()">Clear filters</button></div></div>`;
+};
+// Keep existing whole-menu-item clicks and separate Add controls.
+renderHome();
+</script></body></html>
